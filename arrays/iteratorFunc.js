@@ -40,3 +40,20 @@ function curve(grade) {
 var grades = [77, 65, 81, 92, 83];
 var newgrades = grades.map(curve);
 print(newgrades)
+
+
+// filter
+
+function isEvenNum(num) {
+    return num % 2 === 0;
+}
+function isOddNum(num) {
+    return num % 2 === 1;
+}
+
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+let evenNumber = numbers.filter(isEvenNum);
+let oddNumber = numbers.filter(isOddNum);
+
+print('Even numbers: ', evenNumber);
+print('Odd numbers: ', oddNumber);
