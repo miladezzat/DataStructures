@@ -30,3 +30,13 @@ function add(runningTotal, currentValue) {
 var nums = [1,2,3,4,5,6,7,8,9,10];
 var sum = nums.reduce(add);
 print(sum);
+
+//map() function
+
+function curve(grade) {
+    return grade += 5;
+}
+
+var grades = [77, 65, 81, 92, 83];
+var newgrades = grades.map(curve);
+print(newgrades)
