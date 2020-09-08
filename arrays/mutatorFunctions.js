@@ -9,3 +9,15 @@ print(arr);//1,2,3,4
 
 arr.push(5) // add 5 in last element
 print(arr) //1,2,3,4,5
+
+//add elements to the middle of array
+let index =Math.floor(arr.length / 2)
+arr.splice(index, 0, [10,20,30,40]);
+print(arr);
+
+//delete elements from the middle
+arr = [1,2,10,20,30,40,3,4,5];
+index = Math.floor(arr.length / 2)-2;
+arr.splice(index, 4);
+
+print(arr);
