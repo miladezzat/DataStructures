@@ -21,3 +21,8 @@ index = Math.floor(arr.length / 2)-2;
 arr.splice(index, 4);
 
 print(arr);
+
+let notSortedArr = [4,3,7,1,10,155,2];
+
+notSortedArr.sort(function(num1, num2){ return num1 - num2 });
+print(notSortedArr);
