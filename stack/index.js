@@ -14,7 +14,7 @@ function push(element) {
     this.dataStore[this.top++] = element;
 }
 function peek() {
-    return this.dataStore[this.top-1];
+    return this.dataStore[this.top - 1];
 }
 function pop() {
     return this.dataStore[--this.top];
@@ -28,8 +28,17 @@ function length() {
     return this.top;
 }
 
-let s = new Stack();
 
-s.push('milad');
-print(s.peek());
-print(s.length())
+function factorial(n) {
+    let s = new Stack();
+    while (n > 1) {
+        s.push(n--);
+    }
+    let product = 1;
+    while (s.length() > 0) {
+        product *= s.pop();
+    }
+    return product;
+}
+
+print(fact(5))
